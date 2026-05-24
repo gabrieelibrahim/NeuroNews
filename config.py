@@ -19,4 +19,6 @@ RSS_FEEDS = [
 ]
 
 # Database File
-DB_FILE = 'news_feeds.db'
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_FILE = os.path.join(BASE_DIR, 'news_feeds.db')
