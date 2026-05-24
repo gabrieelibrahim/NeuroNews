@@ -1,0 +1,61 @@
+{
+    "brand_name": "NeuroTrade",
+    "style_version": "1.0",
+    "style_codename": "Claude Orange Signature",
+    
+    "color_palette": {
+        "primary_accent": "#E8714A",
+        "primary_accent_name": "Warm Terracotta Orange (Claude-style)",
+        "secondary_accent": "#D4622B",
+        "secondary_accent_name": "Deep Amber",
+        "background_dark": "#1A1A2E",
+        "background_dark_name": "Ultra-Dark Charcoal",
+        "background_navy": "#16213E",
+        "background_navy_name": "Deep Navy",
+        "background_gradient": "linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)",
+        "text_primary": "#FFFFFF",
+        "text_secondary": "#B0B0C0",
+        "danger_bearish": "#FF3B3B",
+        "bullish_green": "#00E676",
+        "glow_orange": "rgba(232, 113, 74, 0.4)",
+        "card_border": "rgba(232, 113, 74, 0.3)",
+        "card_background": "rgba(26, 26, 46, 0.85)",
+        "grid_lines": "#2A2A4E"
+    },
+
+    "typography": {
+        "headline_font": "Inter Black / Outfit ExtraBold",
+        "headline_weight": "800-900",
+        "headline_transform": "uppercase",
+        "headline_letter_spacing": "2px",
+        "subheadline_font": "Inter SemiBold",
+        "subheadline_weight": "600",
+        "subheadline_transform": "capitalize",
+        "body_font": "Inter Regular",
+        "body_weight": "400",
+        "text_shadow": "0 2px 8px rgba(0,0,0,0.6)"
+    },
+
+    "layout": {
+        "aspect_ratio_square": "1080x1080",
+        "aspect_ratio_portrait": "1080x1350",
+        "card_border_radius": "16px",
+        "card_border": "1px solid rgba(232, 113, 74, 0.3)",
+        "card_backdrop_filter": "blur(12px)",
+        "watermark_position": "top-right",
+        "watermark_glow": "orange",
+        "bottom_bar_text": "🔗 Link di Bio | @neurotrade",
+        "bottom_bar_color": "#B0B0C0",
+        "bottom_bar_font_size": "14px"
+    },
+
+    "effects": {
+        "lighting": "cinematic volumetric orange haze on edges",
+        "particles": "orange bokeh #E8714A at 20% opacity",
+        "chart_line_color": "#E8714A",
+        "chart_background": "#1A1A2E",
+        "depth_of_field": "blur on background, sharp foreground",
+        "phone_drop_shadow": "0 20px 60px rgba(0,0,0,0.5)",
+        "phone_screen_glow": "rgba(232, 113, 74, 0.3)"
+    }
+}

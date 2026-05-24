@@ -1,0 +1,4 @@
+.env
+__pycache__/
+news_feeds.db
+*.pyc
