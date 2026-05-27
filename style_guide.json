@@ -1,18 +1,37 @@
 {
     "brand_name": "NeuroTrade",
-    "style_version": "1.0",
-    "style_codename": "Claude Orange Signature",
-    
+    "style_version": "2.0",
+    "style_codename": "Terracotta Orange Premium V2",
+
+    "v2_rules": {
+        "max_daily_contents": 3,
+        "min_viral_score": 7,
+        "quality_over_quantity": true,
+        "headline_style": "emotional, short, curiosity-driven, IG thumbnail optimized",
+        "required_emotions": ["FEAR", "FOMO", "PANIC", "SHOCK", "GREED", "ANGER", "HOPE"],
+        "image_aspect_ratio": "4:5",
+        "image_prompt_min_words": 100,
+        "image_prompt_language": "ENGLISH",
+        "caption_max_words": 120,
+        "caption_language": "INDONESIAN",
+        "no_generic_assets": true
+    },
+
     "color_palette": {
         "primary_accent": "#E8714A",
-        "primary_accent_name": "Warm Terracotta Orange (Claude-style)",
-        "secondary_accent": "#D4622B",
-        "secondary_accent_name": "Deep Amber",
+        "primary_accent_name": "Warm Terracotta Orange",
+        "secondary_accent": "#D97756",
+        "secondary_accent_name": "Deep Terracotta",
+        "tertiary_accent": "#D4622B",
+        "tertiary_accent_name": "Deep Amber",
         "background_dark": "#1A1A2E",
         "background_dark_name": "Ultra-Dark Charcoal",
-        "background_navy": "#16213E",
-        "background_navy_name": "Deep Navy",
-        "background_gradient": "linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)",
+        "background_charcoal": "#191919",
+        "background_charcoal_name": "Soft Black",
+        "background_cream": "#FBF9F6",
+        "background_cream_name": "Warm Cream (light mode)",
+        "background_offwhite": "#F9F6F0",
+        "background_offwhite_name": "Elegant Off-White",
         "text_primary": "#FFFFFF",
         "text_secondary": "#B0B0C0",
         "danger_bearish": "#FF3B3B",
@@ -28,6 +47,7 @@
         "headline_weight": "800-900",
         "headline_transform": "uppercase",
         "headline_letter_spacing": "2px",
+        "headline_style_v2": "emotional, short, curiosity-driven, NOT portal-style",
         "subheadline_font": "Inter SemiBold",
         "subheadline_weight": "600",
         "subheadline_transform": "capitalize",
@@ -37,8 +57,8 @@
     },
 
     "layout": {
-        "aspect_ratio_square": "1080x1080",
-        "aspect_ratio_portrait": "1080x1350",
+        "aspect_ratio_portrait": "1080x1350 (4:5 — primary for V2)",
+        "aspect_ratio_square": "1080x1080 (secondary)",
         "card_border_radius": "16px",
         "card_border": "1px solid rgba(232, 113, 74, 0.3)",
         "card_backdrop_filter": "blur(12px)",
@@ -49,6 +69,65 @@
         "bottom_bar_font_size": "14px"
     },
 
+    "visual_system_v2": {
+        "image_prompt_requirements": {
+            "must_include": [
+                "main object/subject",
+                "background/environment",
+                "lighting (type, direction, intensity, color)",
+                "dominant colors with Terracotta Orange accents",
+                "mood/atmosphere",
+                "camera angle and lens type",
+                "visual effects (DOF, volumetric, reflections)"
+            ],
+            "style_keywords": [
+                "ultra detailed",
+                "cinematic",
+                "hyper realistic",
+                "premium economy news",
+                "instagram feed style",
+                "dramatic lighting",
+                "editorial photography",
+                "8K quality"
+            ],
+            "forbidden_in_image": [
+                "text",
+                "typography",
+                "headlines",
+                "watermarks",
+                "infographics",
+                "written logos"
+            ]
+        },
+        "visual_style_rotation": [
+            "Bloomberg Editorial",
+            "Luxury Finance",
+            "Dark Corporate",
+            "Macro Economic Thriller",
+            "Documentary Realism",
+            "Moody Magazine Cover",
+            "Institutional Trading Atmosphere",
+            "Geopolitical Cinema",
+            "Minimal Luxury",
+            "Financial Dystopian",
+            "Neo Finance Architecture",
+            "High-End Technology Campaign"
+        ],
+        "asset_rules": {
+            "faces": "Must specify EXACT person name + expression + outfit",
+            "logos": "Must specify EXACT company/institution name",
+            "objects": "Must specify EXACT objects (no generic descriptions)",
+            "backgrounds": "Must specify EXACT location/scene",
+            "forbidden_generic": [
+                "foto pendukung ekonomi",
+                "gambar ilustrasi pasar",
+                "visual yang relevan",
+                "foto pendukung",
+                "gambar yang sesuai"
+            ]
+        }
+    },
+
     "effects": {
         "lighting": "cinematic volumetric orange haze on edges",
         "particles": "orange bokeh #E8714A at 20% opacity",
@@ -56,6 +135,27 @@
         "chart_background": "#1A1A2E",
         "depth_of_field": "blur on background, sharp foreground",
         "phone_drop_shadow": "0 20px 60px rgba(0,0,0,0.5)",
-        "phone_screen_glow": "rgba(232, 113, 74, 0.3)"
+        "phone_screen_glow": "rgba(232, 113, 74, 0.3)",
+        "organic_shapes": true,
+        "humanist_minimalism": true
+    },
+
+    "viral_scoring": {
+        "criteria": [
+            "potensi_viral",
+            "potensi_komentar",
+            "fear_fomo",
+            "tokoh_terkenal",
+            "dampak_ekonomi",
+            "visual_cinematic",
+            "relevan_indonesia"
+        ],
+        "score_thresholds": {
+            "reject": "1-4 (jangan dipost)",
+            "mediocre": "5-6 (biasa saja)",
+            "post_worthy": "7-8 (layak upload)",
+            "priority": "9-10 (prioritas utama)"
+        },
+        "minimum_to_post": 7
     }
 }
