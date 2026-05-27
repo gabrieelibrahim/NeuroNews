@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "NeuroNews",
+      name: "NeuroNewsBot",
       script: "/root/NeuroNewsBot/main.py",
       cwd: "/root/NeuroNewsBot",
       interpreter: "python3",
